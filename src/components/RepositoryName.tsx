@@ -1,4 +1,12 @@
-export function RepositoryName(props){
+interface RepositoryNameProps {
+    repository: {
+        name: string;
+        description: string;
+        html_url: string;
+    }
+}
+
+export function RepositoryName(props: RepositoryNameProps){
 
     return(
         <section className="repository-list">
